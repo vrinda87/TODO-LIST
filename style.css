@@ -1,0 +1,154 @@
+
+body{
+  background-color:blueviolet;
+  background-image: url(images/270177.webp);
+    position: relative;
+    min-height: 70vh;
+
+}
+
+.minHeight{
+    min-height: 72vh;
+}
+.marginTop{
+    margin-top: 100px;
+}
+.marginBottomReduce{
+    margin-bottom: 20px !important;
+}
+
+main {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  
+  }  
+
+.form {
+background-color: blue;
+
+    text-align: center;
+    position: absolute;
+    width: 25rem;
+    
+    display: none;
+    border-radius: .5rem;
+    overflow: hidden;
+  }
+  .form--header-container {
+    height: 6rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    
+  }
+
+  .form--header-title {
+    font-size: 1.4rem;
+  }
+
+  .form--header-text {
+    padding: 0.5rem 0;
+  }
+
+  input[type='text'] {
+    padding: 1rem;
+    margin: auto;
+    margin-top: 0rem;
+    width: 20rem;
+    display: block;
+    border-radius: 1rem;
+    outline: none;
+    
+  }
+  input[type='password'] {
+    padding: 1rem;
+    margin: auto;
+    margin-top: 0rem;
+    width: 20rem;
+    display: block;
+    border-radius: 1rem;
+    outline: none;
+  }
+
+
+  .form__btn {
+  
+    color: blue;
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.7rem;
+    width: 20rem;
+    margin: 1rem auto;
+    border-radius: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+  }
+  .form--message-text {
+    width: 25rem;
+    background: #fff;
+    color: rgb(1, 0, 2);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(51, 51, 51, 0.2);
+    animation: fadeIn 0.8s;
+    border-radius: 1rem;
+  }
+
+  .form-active {
+    z-index: 1000;
+    display: block;
+  }
+.form-active-animate {
+    animation: moveRight 1s;
+  }
+  .form-inactive {
+    display: block;
+    animation: moveLeft 1s;
+  }
+
+  .errorMsg{
+    position: absolute;
+    top:-100%;
+    left:50%;
+    width:40%;
+    padding: 0.5% 5%;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    border-radius: 20px;
+    z-index: 2000;
+    text-align: right !important;
+}
+.errorMsg::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(0, 0, 0, 0.753);
+    position: absolute;
+    bottom:-54%;
+    left:67%;
+    z-index: 2000;
+}
+.errorMsg.hidden{
+    display: none;
+}
+
+.disabledList{
+
+        pointer-events:none; 
+        opacity:0.6;        
+
+}
+
+
+#mainnavbar{
+        background:black;
+}
